@@ -1,5 +1,5 @@
 
-# Docker for Ops demo script
+# Docker for IT Pros demo script
 
 This demo runs through some common ops tasks including rolling back from a failed upgrade, doing a succesful upgrade, scaling up a service, and dealing with a (simulated) failure. 
 
