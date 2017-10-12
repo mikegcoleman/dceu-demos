@@ -36,9 +36,9 @@ networks:
   atsea:
 ```
 
-1. Move to the UCP web interface in your web browser
+1. Move to the UCP web interface (https://ucp.dockerdemos.com) in your web browser. There is also a DTR server at  dtr.dockerdemos.com
 
-2. Login w/ the credentials provided
+2. Login - Username: `ops` Password provided elsewhere
 
 2. In the left hand menu click `Stacks`
 
