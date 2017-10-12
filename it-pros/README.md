@@ -5,39 +5,9 @@ This demo runs through some common ops tasks including rolling back from a faile
 
 ## PreDemo setup
 
-You need to configure the cluster before you can run the demo, this includes adding a windows node, and staring our demo app.
+You will save some time if you preload the demo app since it takes a few minutes to start. 
 
-The demo app is a Linux container running a Java-based web front end, the database is a Microsoft SQL Server instance. 
-
-### Add the Windows node
-
-Our cluster is nearly completel configured, but we do need to do one more thing: Add a Windows worker node.
-
-1. In your broswer navigate to https://ee.microsoft.play-with-docker.com fill out the form and you'll be sent to main PWD scene
-
-1. From the main PWD screen click the `UCP` button on the left side of the screen
-
-2. When prompted enter your username and password (these can be found below the console window in the main PWD screen). The UCP web interface should load up in your web browser.
-
-3. From the main dashboard screen, click `Add a Node` on the bottom left of the screen
-
-4. Copy the text from the dark box shown on the `Add Node` screen.
-
-6. Switch back to the PWD interface, and click the name of your Windows node. This will connect the web-based console to your Windows Server 2016 Docker EE host.
-
-7. Paste the text from Step 4 at the command prompt in the Windows console.
-
-	You should see the message `This node joined a swarm as a worker.` indicating you've successfully joined the node to the cluster.
-
-5. Switch back to the UCP server in your web browser and click the `x` in the upper right corner to close the `Add Node` window
-
-6. You should be taken to the `Nodes` screen will will see 3 nodes listed at the bottom of your screen.
-
-	After a minute or two refresh your web browswer to ensure that your Windows worker node has come up as `healthy`
-
-### Run the demo app
-
-After the Windows node comes up, you can deploy the application:
+The app is a two service art store with a linux java website and a ms sql server database backend. 
 
 ```
 version: "3.2"
@@ -67,6 +37,8 @@ networks:
 ```
 
 1. Move to the UCP web interface in your web browser
+
+2. Login w/ the credentials provided
 
 2. In the left hand menu click `Stacks`
 

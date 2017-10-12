@@ -16,29 +16,27 @@ Make sure these things are done before you run this demo for the very first time
 2. From D4M or D4W make sure you're  logged into Docker Cloud
 
 		Username: mollydock
-		Password: laptop password w/ captial first letter + 123 (eg Password123)
+		Password: see note at demo pod
 
 	![](./images/login.png)
 
 3. In the same menu, hover of `mollydock` and choose `Docker2017`
 
-3. Clone `https://github.com/mikegcoleman/dcus-booth-demo-2017.git` onto the demo machine
+3. Clone `https://github.com/mikegcoleman/dceu-demos.git` onto the demo machine
 
 		$ git clone https://github.com/mikegcoleman/dcus-booth-demo-2017.git 
              
 5. Navigate in a web browser to [https://cloud.docker.com](https://cloud.docker.com) and log in w/ the credentials in step 3. 
 
-	> **Note** If your top menu does not look like the image below, click the `Swarm Mode` slider at the top of the left hand menu
+	> **Note** Make sure you're in `Swarm Mode`
 
-
-![](./images/swarm_mode.png)
 
 ## Running the Demo
 This demo is designed to show how you can use Docker for Mac or Docker for Windows alongside Docker Cloud in your everyday development workflow to not only  manage Docker containers locally, but also across Docker Swarms running on virtually any platform.
 
-For this demo I have Docker for Mac (or Docker for Windows) installed, and I've got an application, Docker Pets, that I've just built. I'm going to deploy it locally, then I'm going to deploy to Swarm Clusters running on AWS, Azure, and/or GCP. 
+For this demo I have Docker for Mac (or Docker for Windows) installed, and I've got an application, Docker Pets, that I've just built. I'm going to deploy it locally, then I'm going to deploy to Swarm Clusters running on AWS and Azure.
 
-Let's take a look at our environment.
+Let's take a look at our environment in Docker Cloud
 
 1. Show that as the default user `mollydock` doesn't have any Swarms or Repositories by clicking on `Repositories` and `Swarms` in the top menu. 
 
@@ -48,11 +46,13 @@ Let's take a look at our environment.
 
 5. Click `Repositories` and `Swarms` to show that Molly now has access to those resources. 
 
-Now et's jump in and start by deploying our simple web app locally. 
+Now let's jump in and start by deploying our simple web app locally. 
+
+In your terminal windows
 
 1. Change into the `dxdemo` directory (this is assuming you cloned the repo into the user home directory)
 
-		$ cd ~/dcus-booth-demo-2017/dxdemo
+		$ cd ~/dceu-demos/dxdemo
 
 2. Examine the contents of the `docker-compose.yml` file 
 
@@ -88,7 +88,7 @@ Now et's jump in and start by deploying our simple web app locally.
 
 4. Navigate in your browser to `https://localhost:5000` to show the service running. 
 
-Now that we know the service is running as expected locally, let's deploy it to the cloud. Docker for Mac/Windows allows us to manage federated Docker Swarms. Today there is deep integration with AWS (with integration for both Azure and GCP coming shortly). But if you're not running on AWS (or even in the cloud) you can still "bring your own swarm". 
+Now that we know the service is running as expected locally, let's deploy it to the cloud. Docker for Mac/Windows allows us to manage federated Docker Swarms. There is deep integration with AWS and Azure. And you can always "bring your own swarm". 
 
 Let's take a look at that integration. 
 
