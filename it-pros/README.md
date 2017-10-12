@@ -15,7 +15,7 @@ version: "3.2"
 services:
 
   database:
-    image: sixeyed/atsea-db:mssql
+    image: dockersamples/atsea-db:mssql
     ports:
       - mode: host
         target: 1433
@@ -25,7 +25,7 @@ services:
       endpoint_mode: dnsrr
 
   appserver:
-    image: mikegcoleman/atsea_appserver:1.0
+    image: dockersamples/atsea-appserver:1.0
     ports:
       - target: 8080
         published: 8080
@@ -83,7 +83,7 @@ In this section we're going to first simulate a failed upgrade attempt, and see 
 
 4. On the left, under `Configure` select `Details`
 
-5. Under image, change the value to `mikegcoleman/atsea_appserver:2.0`
+5. Under image, change the value to `dockersamples/atsea-appserver:2.0`
 
 6. Click `Update` in the bottom right corner
 
@@ -129,7 +129,7 @@ Now that we've dealt with a failed upgrade, let's look at rolling out a successf
 
 4. On the left, under 'Configure` select `Details`
 
-5. Under image, change the value to `mikegcoleman/atsea_appserver:3.0`
+5. Under image, change the value to `dockersamples/atsea-appserver:3.0`
 
 6. Click `Update` in the bottom right corner
 

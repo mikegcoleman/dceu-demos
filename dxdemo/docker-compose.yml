@@ -7,4 +7,5 @@ services:
         healthcheck:
             interval: 10s
             timeout: 2s
-            retries: 3 
+            retries: 3
+
