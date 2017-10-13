@@ -1,6 +1,8 @@
 
 # Docker for IT Pros demo script
 
+You can find videos of all show demos [here](https://drive.google.com/drive/folders/0ByQd4O58ibOENWtWT0xUakxGa0U?usp=sharing)
+
 This demo runs through some common ops tasks including rolling back from a failed upgrade, doing a succesful upgrade, scaling up a service, and dealing with a (simulated) failure. 
 
 ## PreDemo setup
@@ -188,7 +190,7 @@ In this section we're going to simulate a node failure and see how Docker EE han
 
 3. From the left menu click `Nodes`
 
-4. Click on `worker1`
+4. Click on `dceu-lin-01-a`
 
 5. From the `Configure` dropdown on the right side select Details
 
@@ -200,7 +202,7 @@ In this section we're going to simulate a node failure and see how Docker EE han
 
 8. Go to the AtSea website and refresh to verify it's still running.
 
-	Even though one node failed, the built in Docker EE load balancer will direct traffic to the containers running on our healthy `manager1` node
+	Even though one node failed, the built in Docker EE load balancer will direct traffic to the containers running on our healthy nodes. 
 
 9. Move back to UCP
 
@@ -218,7 +220,7 @@ In this section we're going to simulate a node failure and see how Docker EE han
 
 ## Demo Reset
 
-1. Put worker1 in "available" mode (take it out of drain mode)
+1. Put `dceu-lin-01-a` in "available" mode (take it out of drain mode)
 
 2. Scale appserver back to 1 instance
 

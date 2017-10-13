@@ -1,5 +1,7 @@
 # DX Docker Con Demo
 
+You can find videos of all show demos [here](https://drive.google.com/drive/folders/0ByQd4O58ibOENWtWT0xUakxGa0U?usp=sharing)
+
 ## Demo setup
 
 Make sure these things are done before you run this demo for the very first time. 
