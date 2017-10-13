@@ -24,9 +24,7 @@ Make sure these things are done before you run this demo for the very first time
 
 3. In the same menu, hover of `mollydock` and choose `Docker2017`
 
-3. Clone `https://github.com/mikegcoleman/dceu-demos.git` onto the demo machine
-
-		$ git clone https://github.com/mikegcoleman/dcus-booth-demo-2017.git 
+3. Clone `https://github.com/mikegcoleman/dceu-demos.git` onto the demo machineit 
              
 5. Navigate in a web browser to [https://cloud.docker.com](https://cloud.docker.com) and log in w/ the credentials in step 3. 
 
