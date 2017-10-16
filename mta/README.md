@@ -18,8 +18,9 @@ We have a VHD in our Windows VM, and we're going to use Image2 Docker to extract
 
 ## Create the dockerfile with Image2Docker
 
+1. Make sure you're in the Windows VM
 
-1. Open up a powershell window
+2. Open up a powershell window
 
 3. Use Image2Docker's `ConvertTo-Dockerfile` command to create a dockerfile from the VHD.
 
@@ -55,7 +56,7 @@ When the process completes you'll find a dockerfile in `c:\windowstweetapp`
 ### <a name="task3.3"></a> Task 3.3: Deploy the Windows Web App
 Now that we have our Windows Tweet App up on the DTR server, let's deploy it. 
 
-1. Switch  to UCP in your web browser
+1. Switch  to UCP in your LOCAL web browser
 
 2. In the left hand menu click `Services`
 
