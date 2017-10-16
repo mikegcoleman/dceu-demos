@@ -18,15 +18,14 @@ We have a VHD in our Windows VM, and we're going to use Image2 Docker to extract
 
 ## Create the dockerfile with Image2Docker
 
-There is a Windows Server 2016 VHD that contains our Windows Tweet App stored in `c:\` on Windows host. We're going to use Image2Docker to scan the VHD, and create a Dockerfile. We'll build the Dockerfile as we did in the previous step, push it to DTR, and then deploy our Windows tweet app.
 
-1. Click the name of your Windows host in PWD to switch your web console.
+1. Open up a powershell window
 
 3. Use Image2Docker's `ConvertTo-Dockerfile` command to create a dockerfile from the VHD.
 
 	```
 	ConvertTo-Dockerfile -ImagePath c:\ws2016.vhd -Artifact IIS -OutputPath C:\windowstweetapp -Verbose
-	``
+	```
 	
 When the process completes you'll find a dockerfile in `c:\windowstweetapp`
 
